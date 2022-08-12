@@ -6,12 +6,20 @@ body {
   color: var(--text-color-p);
   background-color: var(--body-background-color);
 }
+img {
+  display: block;
+}
 :root {
   --text-color: #212121;
   --beckground-color: #2196f3;
   --text-color-p: #757575;
   --body-background-color: #ffffff;
   --button-hover-focus: #188ce8;
+}
+.list,
+.link-focus,
+.ul-address {
+  list-style: none;
 }
 /* ---------header ----------- ---*/
 .logo-top {
@@ -199,7 +207,7 @@ body {
 /* portfoli */
 .button-portfolio-color {
   background: var(--beckground-color);
-  
+
   /* shadow-middle */
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -258,4 +266,25 @@ body {
   line-height: 30px;
   text-decoration: none;
   letter-spacing: 0.03em;
+}
+.third-section-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0%;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  outline: 2px solid tomato;
+}
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid tomato;
 }
