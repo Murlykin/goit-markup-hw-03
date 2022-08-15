@@ -10,7 +10,6 @@ html {
 .list,
 .link-focus,
 .ul-address {
-      
   list-style: none;
   padding: 0;
   margin: 0;
@@ -23,7 +22,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color-p);
   background-color: var(--body-background-color);
-  margin:0%
+  margin: 0%;
 }
 :root {
   --text-color: #212121;
@@ -31,27 +30,39 @@ body {
   --text-color-p: #757575;
   --body-background-color: #ffffff;
   --button-hover-focus: #188ce8;
+  --footer-bacground-color: #2f303a;
+  --teams-bacground-color: #F5F4FA;
 }
 
+.sections {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
 
 /* ---------header ----------- ---*/
 .head-sectione {
   background-color: var(--body-background-color);
 
   color: var(--head-line-color);
-  
 }
-.conteiner {
-  margin-top: 0%;
+.conteiner-top {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0%;
   padding-left: 15px;
   padding-right: 15px;
   height: 80px;
   width: 1200px;
-  outline: 2px solid tomato;}
+  outline: 2px solid tomato;
+}
 
 .logo-top {
   font-family: 'Raleway';
@@ -61,7 +72,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   text-decoration: none;
- 
 }
 .logo-top-color {
   color: var(--beckground-color);
@@ -74,9 +84,7 @@ body {
 .site-nav {
   display: flex;
   margin-left: 93px;
-
 }
-
 .site-nav .items {
   margin-right: 50px;
 }
@@ -84,23 +92,13 @@ body {
   display: flex;
   margin-left: auto;
 }
-
 .auth-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .auth-nav .items {
   margin-left: 50px;
 }
-
-
-
-
-
-
-
-
 .link-focus a:hover {
   color: var(--beckground-color);
   border-radius: 4px;
@@ -113,7 +111,8 @@ body {
   outline: none;
 }
 .nav-link,
-.nav-link-color {
+.nav-link-color,
+.tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -124,30 +123,31 @@ body {
 .nav-link-color {
   color: var(--beckground-color);
 }
-.mailto,
-.tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--beckground-color);
-}
 .tel {
   color: var(--text-color-p);
 }
 
 /* ---------------- section_1 ---------- */
+.banner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--footer-bacground-color);
+
+  text-align: center;
+}
+
 .header-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--body-background-color);
   background: #2f303a;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 /* -------button Studio-------------*/
@@ -160,21 +160,37 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--body-background-color);
+  border-color: transparent;
+  padding: 10px 32px;
 }
-.button:hover {
-  background-color: var(--button-hover-focus);
-}
+.button:hover,
 .button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--button-hover-focus);
+  background-color: var(--button-hover-focus);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
+
+
+
+
 /* ------ cection-2 -------------*/
+
+.section-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -30px;
+  padding: 0px;
+}
+.section-horizontal .items {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -182,6 +198,21 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin: 0px ;
+  margin-bottom: 50px;
+}
+
+.hidden-visally {
+  position: fixed;
+  transform: scale(0);
+}
+.hidden-visally .text-section-2 {
+  color: var(--secondory-text-color);
+
+  margin-top: 0;
+
+  font-size: 14px;
+  line-height: 24px;
 }
 .header-text-section-2 {
   font-weight: 700;
@@ -190,6 +221,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 .text-section-2 {
   font-size: 14px;
@@ -197,22 +229,51 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--text-color-p);
+  margin-top: 0;
 }
 
-/* Line */
+
+/* Line
 .line {
   width: 1600px;
   height: 0px;
   left: 0px;
   top: 80px;
   border: 1px solid #ececec;
-}
+} */
 
 /* section-3 */
+.section-3 {
+  display: flex;
 
-.foto {
-  border-radius: 0px;
+
+  }
+
+.sections.about {
+      padding-top: 0;
+  }
+
+  
+.section-3 .items {
+    display: inline-block;
+  }
+
+.section-3 .items+.items {
+  margin-left: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* section-4 */
+
 .header-text-section-4,
 .text-section-4 {
   font-weight: 500;
@@ -221,13 +282,46 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-top: 0;
 }
 .text-section-4 {
   font-size: 16px;
   color: var(--text-color-p);
 }
+.team-curds {
+    background-color: var(--body-background-color);
+      width: 270px;
+}
+
+.teams {
+  background-color: var(--teams-bacground-color);
+}
+.section-4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -30px;
+}
+
+
+.section-4 .team-curds {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+.conteiner-team {
+  display: block;
+  padding: 20px 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  outline: 2px solid tomato;
+}
+
+
+
 
 /* Footer */
+
+
 .logo-footer {
   font-family: 'Raleway';
   font-weight: 700;
@@ -236,12 +330,15 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--beckground-color);
+  display: inline-block;
+margin-bottom: 20px;
 }
 .logo-footer-color {
   color: var(--body-background-color);
 }
 .footer-background {
-  background: #2f303a;
+  background: var(--footer-bacground-color);
+  padding: 60px;
 }
 .adress-link {
   font-size: 14px;
@@ -253,12 +350,12 @@ body {
 }
 .ul-address a:hover {
   color: var(--beckground-color);
-
+margin-bottom: 9px;
   border-radius: 4px;
 }
 .ul-address a:focus {
   outline: none;
-  box-shadow: 0 0 0 3px var(--beckground-color);
+
 }
 .mailto-footer,
 .tel-footer {
@@ -268,12 +365,26 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
+
+.footer {
+  margin-bottom: 9px;
+}
+
+
+
+
+
+
+
+
+
 
 /* portfoli */
 .button-portfolio-color {
   background: var(--beckground-color);
-  
+
   /* shadow-middle */
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
