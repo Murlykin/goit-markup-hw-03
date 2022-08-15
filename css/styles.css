@@ -35,7 +35,7 @@ body {
   --footer-bacground-color: #2f303a;
   --teams-bacground-color: #f5f4fa;
   --border-color: #eeeeee;
-  --technical-color: tomato;
+  /* --technical-color: tomato; */
 }
 .sections {
   padding-top: 94px;
