@@ -4,67 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Портфоліо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Портфоліо</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--header-->
-    <header>
-      <a href="index.html" class="logo-top" lang="en"
-        ><span class="logo-top-color">Web</span>Studio</a
-      >
-      <nav>
-        <ul class="link-focus">
-          <li><a href="index.html" class="nav-link">Студія</a></li>
-          <li><a href="portfolio.html" class="nav-link-color">Портфоліо</a></li>
-          <li><a href="#" class="nav-link">Контакти</a></li>
+    <header class="head-sectione">
+      <div class="conteiner-top main-nav">
+        <a href="index.html" class="logo-top" lang="en"><span class="logo-top-color">Web</span>Studio</a>
+        <nav>
+          <ul class="link-focus site-nav">
+            <li class="items"><a href="index.html" class="nav-link-color">Студія</a></li>
+            <li class="items"><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
+            <li class="items"><a href="#" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="link-focus auth-nav">
+          <li class="items"><a href="mailto:info@devstudio.com" class="nav-link-color">info@devstudio.com</a></li>
+          <li class="items"><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="link-focus">
-        <li><a href="mailto:info@devstudio.com" class="mailto">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
-      </ul>
-      <hr class="line" />
+      </div>
     </header>
     <main>
       <!--section-1p-->
-      <section>
-        <h1>Портфоліо</h1>
-        <ul>
-          <li>
+      <section class="sections">
+        <div class="conteiner main-portfolio">
+        <h1 class="hidden-visally">Портфоліо</h1>
+        <ul class="list port-bt">
+
+          
+          <li class="items">
             <button type="button" class="button-portfolio-color">
               <span class="button-portfolio-color-text">Усі</span>
             </button>
           </li>
-          <li>
+
+
+
+
+          <li class="items">
             <button type="button" class="button-portfolio">
               <span class="button-portfolio-text">Веб-сайти</span>
             </button>
           </li>
-          <li>
+          <li class="items">
             <button type="button" class="button-portfolio">
               <span class="button-portfolio-text">Додатки</span>
             </button>
           </li>
-          <li>
+          <li class="items">
             <button type="button" class="button-portfolio">
               <span class="button-portfolio-text">Дизайн</span>
             </button>
           </li>
-          <li>
+          <li class="items">
             <button type="button" class="button-portfolio">
               <span class="button-portfolio-text">Маркетинг</span>
             </button>
           </li>
         </ul>
-        <ul>
-          <li>
+
+
+
+
+
+
+
+
+
+
+        
+        <ul class="list elements-portfolio">
+
+          <li class="portfolio-item">
             <a href="images/portfolio/img1.jpg">
               <img
                 src="images/portfolio/img1.jpg"
@@ -73,10 +94,13 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio">Технокряк</h2>
-            <p class="text-portfolio">Веб-сайт</p>
+            <p class="text-portfolio">Веб-сайт</p></div>
           </li>
-          <li>
+
+
+          <li class="portfolio-item">
             <a href="images/portfolio/img2.jpg">
               <img
                 src="images/portfolio/img2.jpg"
@@ -85,10 +109,11 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio">Постер <span lang="en">Orlean vs Golden Star</span></h2>
-            <p class="text-portfolio">Дизайн</p>
+            <p class="text-portfolio">Дизайн</p></div>
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="images/portfolio/img3.jpg">
               <img
                 src="images/portfolio/img3.jpg"
@@ -97,10 +122,11 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio">Ресторан <span lang="en">Seafood</span></h2>
-            <p class="text-portfolio">Додаток</p>
+            <p class="text-portfolio">Додаток</p></div>
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="images/portfolio/img4.jpg">
               <img
                 src="images/portfolio/img4.jpg"
@@ -109,10 +135,11 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio">Проєкт <span lang="en">Prime</span></h2>
-            <p class="text-portfolio">Маркетинг</p>
+            <p class="text-portfolio">Маркетинг</p></div>
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="images/portfolio/img5.jpg">
               <img
                 src="images/portfolio/img5.jpg"
@@ -121,10 +148,11 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio">Проєкт <span lang="en">Boxes</span></h2>
-            <p class="text-portfolio">Додаток</p>
+            <p class="text-portfolio">Додаток</p></div>
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="images/portfolio/img6.jpg">
               <img
                 src="images/portfolio/img6.jpg"
@@ -133,10 +161,11 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio" lang="en">Inspiration has no Borders</h2>
-            <p class="text-portfolio">Веб-сайт</p>
+            <p class="text-portfolio">Веб-сайт</p></div>
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="images/portfolio/img7.jpg">
               <img
                 src="images/portfolio/img7.jpg"
@@ -145,10 +174,11 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio">Видання <span lang="en">Limited Edition</span></h2>
-            <p class="text-portfolio">Дизайн</p>
+            <p class="text-portfolio">Дизайн</p></div>
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="images/portfolio/img8.jpg">
               <img
                 src="images/portfolio/img8.jpg"
@@ -157,10 +187,11 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio">Проєкт <span lang="en">LAB</span></h2>
-            <p class="text-portfolio">Маркетинг</p>
+            <p class="text-portfolio">Маркетинг</p></div>
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="images/portfolio/img9.jpg">
               <img
                 src="images/portfolio/img9.jpg"
@@ -169,36 +200,33 @@
                 height="294"
                 class="foto"
             /></a>
+            <div class="conteiner-port-text">
             <h2 class="title-portfolio" lang="en">Growing Business</h2>
-            <p class="text-portfolio">Додаток</p>
+            <p class="text-portfolio">Додаток</p></div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Footer-->
-    <footer class="footer-background">
-      <a href="index.html" class="logo-footer" lang="en"
-        >Web<span class="logo-footer-color">Studio</span></a
-      >
-      <address>
-        <ul class="ul-address">
-          <li>
-            <a
-              class="adress-link"
-              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              target="_blank"
-              rel="noopener noreferrer"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="mailto-footer">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="tel-footer">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-    </footer>
+      <footer class="footer-background">
+        <div class="conteiner">
+          <a href="index.html" class="logo-footer" lang="en">Web<span class="logo-footer-color">Studio</span></a>
+          <address>
+            <ul class="ul-address">
+              <li class="footer">
+                <a class="adress-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                  rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="footer">
+                <a href="mailto:info@devstudio.com" class="mailto-footer">info@devstudio.com</a>
+              </li>
+              <li class="footer">
+                <a href="tel:+380961111111" class="tel-footer">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </footer>
   </body>
 </html>

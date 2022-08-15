@@ -31,7 +31,7 @@ body {
   --body-background-color: #ffffff;
   --button-hover-focus: #188ce8;
   --footer-bacground-color: #2f303a;
-  --teams-bacground-color: #F5F4FA;
+  --teams-bacground-color: #f5f4fa;
 }
 
 .sections {
@@ -166,7 +166,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--body-background-color);
   border-color: transparent;
-  padding: 10px 32px;
+  padding: 8px 30px;
 }
 .button:hover,
 .button:focus {
@@ -174,10 +174,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
-
-
-
 
 /* ------ cection-2 -------------*/
 
@@ -198,7 +194,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin: 0px ;
+  margin: 0px;
   margin-bottom: 50px;
 }
 
@@ -232,7 +228,6 @@ body {
   margin-top: 0;
 }
 
-
 /* Line
 .line {
   width: 1600px;
@@ -245,32 +240,19 @@ body {
 /* section-3 */
 .section-3 {
   display: flex;
-
-
-  }
-
-.sections.about {
-      padding-top: 0;
-  }
-
-  
-.section-3 .items {
-    display: inline-block;
-  }
-
-.section-3 .items+.items {
-  margin-left: 30px;
 }
 
+.sections.about {
+  padding-top: 0;
+}
 
+.section-3 .items {
+  display: inline-block;
+}
 
-
-
-
-
-
-
-
+.section-3 .items + .items {
+  margin-left: 30px;
+}
 
 /* section-4 */
 
@@ -289,8 +271,8 @@ body {
   color: var(--text-color-p);
 }
 .team-curds {
-    background-color: var(--body-background-color);
-      width: 270px;
+  background-color: var(--body-background-color);
+  width: 270px;
 }
 
 .teams {
@@ -301,7 +283,6 @@ body {
   flex-wrap: wrap;
   margin: 0 0 0 -30px;
 }
-
 
 .section-4 .team-curds {
   flex-basis: calc(100% / 4 - 30px);
@@ -316,11 +297,7 @@ body {
   outline: 2px solid tomato;
 }
 
-
-
-
 /* Footer */
-
 
 .logo-footer {
   font-family: 'Raleway';
@@ -331,7 +308,7 @@ body {
   text-decoration: none;
   color: var(--beckground-color);
   display: inline-block;
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo-footer-color {
   color: var(--body-background-color);
@@ -350,12 +327,11 @@ margin-bottom: 20px;
 }
 .ul-address a:hover {
   color: var(--beckground-color);
-margin-bottom: 9px;
+  margin-bottom: 9px;
   border-radius: 4px;
 }
 .ul-address a:focus {
   outline: none;
-
 }
 .mailto-footer,
 .tel-footer {
@@ -372,37 +348,48 @@ margin-bottom: 9px;
   margin-bottom: 9px;
 }
 
-
-
-
-
-
-
-
-
-
-/* portfoli */
+/*---------------------------------------------- portfoli ----------------------*/
 .button-portfolio-color {
-  background: var(--beckground-color);
-
-  /* shadow-middle */
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background: var(--beckground-color);
   border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 22px;
+
+  color: var(--text-color);
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-radius: 4px;
+  border-color: transparent;
+  text-align: center;
 }
+
 .button-portfolio-color:hover {
   background-color: #92c8f5;
 }
 .button-portfolio-color:focus {
   outline: none;
-  box-shadow: 0 0 0 3px lightskyblue;
 }
 .button-portfolio {
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  display: inline-block;
+  padding: 6px 22px;
+  background-color: var(--teams-bacground-color);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-radius: 4px;
+  border-color: transparent;
+  text-align: center;
 }
+
 .button-portfolio:hover {
   background-color: #92c8f5;
 }
@@ -430,7 +417,7 @@ margin-bottom: 9px;
   text-decoration: none;
   color: var(--text-color);
 }
-.title-portfolio {
+.title-v {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
@@ -443,4 +430,42 @@ margin-bottom: 9px;
   line-height: 30px;
   text-decoration: none;
   letter-spacing: 0.03em;
+}
+.main-portfolio .port-bt {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.port-bt {
+  display: flex;
+}
+.port-bt .items {
+  display: inline-block;
+}
+
+.port-bt .items + .items {
+  margin-left: 8px;
+}
+
+.elements-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -30px;
+}
+
+.portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.conteiner-port-text {
+  display: block;
+  padding: 24px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  outline: 2px solid tomato;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
