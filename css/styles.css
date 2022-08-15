@@ -1,11 +1,14 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 .list,
 .link-focus,
@@ -14,7 +17,6 @@ html {
   padding: 0;
   margin: 0;
 }
-
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
@@ -32,27 +34,27 @@ body {
   --button-hover-focus: #188ce8;
   --footer-bacground-color: #2f303a;
   --teams-bacground-color: #f5f4fa;
+  --border-color: #eeeeee;
+  --technical-color: tomato;
 }
-
 .sections {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .conteiner {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
+  outline: 2px solid var(--technical-color);
 }
 
 /* ---------header ----------- ---*/
 .head-sectione {
   background-color: var(--body-background-color);
-
-  color: var(--head-line-color);
+  border-bottom: 1px solid;
+  color: #ececec;
 }
 .conteiner-top {
   margin-left: auto;
@@ -61,9 +63,8 @@ body {
   padding-right: 15px;
   height: 80px;
   width: 1200px;
-  outline: 2px solid tomato;
+  outline: 2px solid var(--technical-color);
 }
-
 .logo-top {
   font-family: 'Raleway';
   font-weight: 700;
@@ -101,11 +102,9 @@ body {
 }
 .link-focus a:hover {
   color: var(--beckground-color);
-  border-radius: 4px;
 }
 .link-focus a:focus {
   outline: none;
-  box-shadow: 0 0 0 3px var(--beckground-color);
 }
 .nav-link-colorfocus {
   outline: none;
@@ -132,15 +131,12 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--footer-bacground-color);
-
   text-align: center;
 }
-
 .header-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
@@ -176,7 +172,6 @@ body {
 }
 
 /* ------ cection-2 -------------*/
-
 .section-horizontal {
   display: flex;
   flex-wrap: wrap;
@@ -197,16 +192,13 @@ body {
   margin: 0px;
   margin-bottom: 50px;
 }
-
 .hidden-visally {
   position: fixed;
   transform: scale(0);
 }
 .hidden-visally .text-section-2 {
   color: var(--secondory-text-color);
-
   margin-top: 0;
-
   font-size: 14px;
   line-height: 24px;
 }
@@ -241,15 +233,12 @@ body {
 .section-3 {
   display: flex;
 }
-
 .sections.about {
   padding-top: 0;
 }
-
 .section-3 .items {
   display: inline-block;
 }
-
 .section-3 .items + .items {
   margin-left: 30px;
 }
@@ -274,7 +263,6 @@ body {
   background-color: var(--body-background-color);
   width: 270px;
 }
-
 .teams {
   background-color: var(--teams-bacground-color);
 }
@@ -283,7 +271,6 @@ body {
   flex-wrap: wrap;
   margin: 0 0 0 -30px;
 }
-
 .section-4 .team-curds {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
@@ -294,11 +281,10 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
-  outline: 2px solid tomato;
+  outline: 2px solid var(--technical-color);
 }
 
 /* Footer */
-
 .logo-footer {
   font-family: 'Raleway';
   font-weight: 700;
@@ -343,22 +329,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
-
 .footer {
   margin-bottom: 9px;
 }
 
 /*---------------------------------------------- portfoli ----------------------*/
 .button-portfolio-color {
-  cursor: pointer;
-  background: var(--beckground-color);
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
-  padding: 6px 22px;
-
-  color: var(--text-color);
-
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -366,10 +342,15 @@ body {
   border-radius: 4px;
   border-color: transparent;
   text-align: center;
+  background: var(--beckground-color);
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 6px 22px;
+  color: var(--text-color);
 }
-
 .button-portfolio-color:hover {
-  background-color: #92c8f5;
+  background-color: var(--button-hover-focus);
 }
 .button-portfolio-color:focus {
   outline: none;
@@ -389,13 +370,20 @@ body {
   border-color: transparent;
   text-align: center;
 }
-
-.button-portfolio:hover {
-  background-color: #92c8f5;
-}
+.button-portfolio:hover,
 .button-portfolio:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px lightskyblue;
+  color: var(--body-background-color);
+  background-color: var(--button-hover-focus);
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+  border-color: transparent;
 }
 .button-portfolio-color-text {
   font-family: 'Roboto';
@@ -407,52 +395,42 @@ body {
   letter-spacing: 0.03em;
   color: var(--body-background-color);
 }
-.button-portfolio-text {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--text-color);
-}
-.title-v {
+.title-portfolio {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   text-decoration: none;
   letter-spacing: 0.06em;
   color: var(--text-color);
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 .text-portfolio {
   font-size: 16px;
   line-height: 30px;
   text-decoration: none;
   letter-spacing: 0.03em;
+  margin: 0px;
 }
-.main-portfolio .port-bt {
+.main-portfolio .portfolio-button {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.port-bt {
+.portfolio-button {
   display: flex;
 }
-.port-bt .items {
+.portfolio-button .items {
   display: inline-block;
 }
-
-.port-bt .items + .items {
+.portfolio-button .items + .items {
   margin-left: 8px;
 }
-
 .elements-portfolio {
   display: flex;
   flex-wrap: wrap;
   margin: -30px 0 0 -30px;
 }
-
 .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
@@ -463,8 +441,7 @@ body {
   padding: 24px 20px;
   margin-top: 0;
   margin-bottom: 0;
-
-  outline: 2px solid tomato;
+  outline: 2px solid var(--technical-color);
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
