@@ -96,7 +96,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
   text-decoration: none;
@@ -117,7 +117,7 @@ body {
   margin-left: 93px;
 }
 
-.site-nav .items {
+.site-nav .items:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -131,7 +131,7 @@ body {
   padding-bottom: 32px;
 }
 
-.auth-nav .items {
+.auth-nav .items:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -143,16 +143,12 @@ body {
   outline: none;
 }
 
-.nav-link-colorfocus {
-  outline: none;
-}
-
 .nav-link,
 .nav-link-color,
 .contact-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--text-color);
@@ -161,7 +157,9 @@ body {
 .nav-link-color {
   color: var(--beckground-color);
 }
-
+.nav-link-color:focus {
+  outline: none;
+}
 .contact-nav {
   color: var(--text-color-p);
 }
@@ -177,7 +175,7 @@ body {
 .header-text {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
@@ -195,7 +193,7 @@ body {
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   display: inline-block;
   align-items: center;
   text-align: center;
@@ -228,7 +226,7 @@ body {
 .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -245,13 +243,13 @@ body {
   color: var(--secondory-text-color);
   margin-top: 0;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
 }
 
 .header-text-section-2 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
@@ -260,7 +258,7 @@ body {
 
 .text-section-2 {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--text-color-p);
@@ -299,11 +297,12 @@ body {
 .text-section-4 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .text-section-4 {
@@ -348,7 +347,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--beckground-color);
@@ -367,7 +366,7 @@ body {
 
 .adress-link {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   font-style: normal;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -376,7 +375,7 @@ body {
 
 .contact-footer {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
@@ -386,15 +385,14 @@ body {
 .footer:not(:last-child) {
   margin-bottom: 9px;
 }
-.ul-address a:hover {
+.ul-address a:hover
+ {
   color: var(--beckground-color);
-
-  border-radius: 4px;
 }
 
 .ul-address a:focus {
   outline: none;
-  box-shadow: 0 0 0 3px var(--beckground-color);
+
 }
 
 /*---------------------------------------------- portfoli ----------------------*/
@@ -454,7 +452,7 @@ body {
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.03em;
@@ -464,7 +462,7 @@ body {
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   text-decoration: none;
   letter-spacing: 0.06em;
   color: var(--text-color);
@@ -474,7 +472,7 @@ body {
 
 .text-portfolio {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   text-decoration: none;
   letter-spacing: 0.03em;
   margin: 0px;
