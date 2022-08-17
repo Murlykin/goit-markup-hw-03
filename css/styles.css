@@ -149,7 +149,7 @@ body {
 
 .nav-link,
 .nav-link-color,
-.tel {
+.contact-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -162,7 +162,7 @@ body {
   color: var(--beckground-color);
 }
 
-.tel {
+.contact-nav {
   color: var(--text-color-p);
 }
 
@@ -385,6 +385,16 @@ body {
 
 .footer:not(:last-child) {
   margin-bottom: 9px;
+}
+.ul-address a:hover {
+  color: var(--beckground-color);
+
+  border-radius: 4px;
+}
+
+.ul-address a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--beckground-color);
 }
 
 /*---------------------------------------------- portfoli ----------------------*/
