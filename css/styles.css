@@ -144,7 +144,6 @@ body {
 }
 
 .nav-link,
-.nav-link-color,
 .contact-nav {
   font-weight: 500;
   font-size: 14px;
@@ -154,12 +153,6 @@ body {
   color: var(--text-color);
 }
 
-.nav-link-color {
-  color: var(--beckground-color);
-}
-.nav-link-color:focus {
-  outline: none;
-}
 .contact-nav {
   color: var(--text-color-p);
 }
@@ -306,6 +299,7 @@ body {
 }
 
 .text-section-4 {
+  font-weight: 400;
   font-size: 16px;
   color: var(--text-color-p);
 }
@@ -361,7 +355,8 @@ body {
 
 .footer-background {
   background: var(--footer-bacground-color);
-  padding: 55px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .adress-link {
@@ -396,29 +391,6 @@ body {
 }
 
 /*---------------------------------------------- portfoli ----------------------*/
-.button-portfolio-color {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  border-radius: 4px;
-  border-color: transparent;
-  text-align: center;
-  background: var(--beckground-color);
-  border-radius: 4px;
-  display: inline-block;
-  padding: 6px 22px;
-  color: var(--text-color);
-}
-
-.button-portfolio-color:hover {
-  background-color: var(--button-hover-focus);
-}
-
-.button-portfolio-color:focus {
-  outline: none;
-}
-
 .button-portfolio {
   font-family: 'Roboto';
   font-weight: 500;
@@ -448,17 +420,16 @@ body {
   border-color: transparent;
 }
 
-.button-portfolio-color-text {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--body-background-color);
+.conteiner-port-text {
+  display: block;
+  padding: 24px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  outline: 2px solid var(--technical-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
-
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
@@ -507,13 +478,3 @@ body {
   margin-top: 30px;
 }
 
-.conteiner-port-text {
-  display: block;
-  padding: 24px 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  outline: 2px solid var(--technical-color);
-  border-left: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-}
