@@ -75,7 +75,7 @@ body {
   outline: 2px solid var(--technical-color);
 }
 
-/* ---------header ----------- ---*/
+/* =========================header ==================== */
 .head-sectione {
   background-color: var(--body-background-color);
   border-bottom: 1px solid;
@@ -106,7 +106,7 @@ body {
   color: var(--beckground-color);
 }
 
-/* ---------- nav --------------*/
+/* =========================== nav ==========================*/
 .main-nav {
   display: flex;
   align-items: center;
@@ -157,7 +157,7 @@ body {
   color: var(--text-color-p);
 }
 
-/* ---------------- section_1 ---------- */
+/* ================== section_1 ==================== */
 .banner {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -178,7 +178,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* -------button Studio-------------*/
+/* =====================button Studio=====================*/
 .button {
   font-family: 'Roboto';
   background: var(--beckground-color);
@@ -203,7 +203,7 @@ body {
   border-radius: 4px;
 }
 
-/* ------ cection-2 -------------*/
+/* ============================ cection-2================= */
 .section-horizontal {
   display: flex;
   flex-wrap: wrap;
@@ -211,7 +211,7 @@ body {
   padding: 0px;
 }
 
-.section-horizontal .items {
+.section-horizontal > .items {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
@@ -267,24 +267,22 @@ body {
   border: 1px solid #ececec;
 } */
 
-/* section-3 */
+/* ====================== section-3 ===================== */
+
+.about {
+  padding-top: 0;
+}
 .section-3 {
   display: flex;
 }
-
-.sections.about {
-  padding-top: 0;
-}
-
-.section-3 .items {
+.section-3 > .items {
   display: inline-block;
 }
-
 .section-3 .items + .items {
   margin-left: 30px;
 }
 
-/* section-4 */
+/* ======================== section-4 ========================*/
 
 .header-text-section-4,
 .text-section-4 {
@@ -304,11 +302,6 @@ body {
   color: var(--text-color-p);
 }
 
-.team-curds {
-  background-color: var(--body-background-color);
-  width: 270px;
-}
-
 .teams {
   background-color: var(--teams-bacground-color);
 }
@@ -319,9 +312,11 @@ body {
   margin: 0 0 0 -30px;
 }
 
-.section-4 .team-curds {
+.section-4 > .items {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+  background-color: var(--body-background-color);
+  width: 270px;
 }
 
 .conteiner-team {
@@ -332,7 +327,7 @@ body {
 
   outline: 2px solid var(--technical-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -377,20 +372,18 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer:not(:last-child) {
+.ul-address > .items:not(:last-child) {
   margin-bottom: 9px;
 }
-.ul-address a:hover
- {
+.ul-address a:hover {
   color: var(--beckground-color);
 }
 
 .ul-address a:focus {
   outline: none;
-
 }
 
-/*---------------------------------------------- portfoli ----------------------*/
+/*========================= portfoli=========================*/
 .button-portfolio {
   font-family: 'Roboto';
   font-weight: 500;
@@ -459,7 +452,7 @@ body {
   display: flex;
 }
 
-.portfolio-button .items {
+.portfolio-button > .items {
   display: inline-block;
 }
 
@@ -473,8 +466,7 @@ body {
   justify-content: space-between;
 }
 
-.portfolio-item:not(:nth-child(-n + 3)) {
+.elements-portfolio > .items:not(:nth-child(-n + 3)) {
   flex-basis: auto;
   margin-top: 30px;
 }
-
