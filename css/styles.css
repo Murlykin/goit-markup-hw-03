@@ -418,7 +418,6 @@ body {
   display: block;
   padding: 24px 20px;
   margin-top: 0;
-  text-decoration: none;
   margin-bottom: 0;
   outline: 2px solid var(--technical-color);
   border-left: 1px solid var(--border-color);
@@ -429,7 +428,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  text-decoration: none;
   letter-spacing: 0.06em;
   color: var(--text-color);
   margin-top: 0px;
