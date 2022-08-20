@@ -452,6 +452,10 @@ body {
   display: flex;
 }
 
+.decoration {
+  text-decoration: none;
+}
+
 .portfolio-button > .items {
   display: inline-block;
 }
@@ -465,12 +469,11 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.elements-portfolio>.items {
+  flex-basis: calc(100% / 3 - 30px);  
+}
 
 .elements-portfolio > .items:not(:nth-child(-n + 3)) {
-  flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
 }
 
-.decoration {
-  text-decoration: none;
-}
